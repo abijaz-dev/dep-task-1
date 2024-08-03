@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Reset All */
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--dark-color);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Reset Tags */
+a, li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Variables */
+:root {
+    --primary-color: #D8BFD8;
+    --secondary-color: #F5F5F5;
+    --dark-color: #25150E;
+}
+
+/* Container */
+.container {
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+/* Margins */
+.m {margin: 0.5rem;}
+.m-1 {margin: 1rem;}
+.mb {margin-bottom: 0.5rem;}
+.mb-1 {margin-bottom: 1rem;}
+.mt {margin-top: 0.5rem;}
+.mt-1 {margin-top: 1rem;}
+.mt-2 {margin-top: 2rem;}
+
+/* Image Size */
+img {
+    max-width: 20%;
+}
+
+/* Text Sizes */
+.x-lg {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 1.5rem;
+}
+
+/* Buttons Style */
+.btn {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+    height: clamp(2.5rem, 5vw, 3.5rem);
+    text-align: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.btn-primary {background-color: var(--primary-color);}
+.btn-secondary {background-color: var(--secondary-color);}
+
+
+/* ====== Web Page Styling CSS ====== */
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Showcase */
+.showcase-content {
+    padding: 2rem 0;
+    border-bottom: 1px solid black;
+}
+
+/* Experience */
+.experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Skills */
+.skill-content {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    /* align-items: center; */
+}
+
+.skill-set-list {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+}
+
+.progress-bar {
+    background-color: var(--secondary-color);
+    height: 12px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.progress-score {
+    background-color: var(--dark-color);
+    height: 12px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+/* Social Source */
+.content-box {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+}
+
+.text-overlay h1{
+    text-align: center;
+    color: var(--secondary-color);
+}
