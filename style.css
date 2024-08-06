@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--dark-color);
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
@@ -44,7 +44,7 @@ a, li {
 
 /* Image Size */
 img {
-    max-width: 20%;
+    max-width: 100%;
 }
 
 /* Text Sizes */
@@ -54,6 +54,10 @@ img {
 
 .lg {
     font-size: 1.5rem;
+}
+
+.md {
+    font-size: 1.2rem;
 }
 
 /* Buttons Style */
@@ -90,15 +94,35 @@ nav {
 /* Showcase */
 .showcase-content {
     padding: 2rem 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.hero-img img {
+    width: 30%;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--primary-color);
 }
 
 /* Experience */
+.experience {
+    padding: 1.5rem 0;
+}
+
 .experience-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+.card-box {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 14px;
+    width: 380px;
+    /* aspect-ratio: 1 / 1; */
+    height: 240px;
 }
 
 /* Skills */
@@ -110,31 +134,48 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
-    /* align-items: center; */
+    gap: 20px;
 }
 
 .skill-set-list {
     display: flex;
-    gap: 14px;
+    gap: 18px;
     flex-direction: column;
 }
 
 .progress-bar {
     background-color: var(--secondary-color);
-    height: 12px;
+    height: 10px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
-.progress-score {
+.html-progress-score {
     background-color: var(--dark-color);
-    height: 12px;
-    width: 80%;
-    border-radius: 8px;
+    height: 10px;
+    width: 75%;
+    border-radius: 12px;
+}
+
+.css-progress-score {
+    background-color: var(--dark-color);
+    height: 10px;
+    width: 70%;
+    border-radius: 12px;
+}
+
+.php-progress-score {
+    background-color: var(--dark-color);
+    height: 10px;
+    width: 85%;
+    border-radius: 12px;
 }
 
 /* Social Source */
+.social-source {
+    padding: 2rem 0;
+}
+
 .content-box {
     text-align: center;
 }
@@ -148,12 +189,63 @@ nav {
     padding: 2rem 0;
 }
 
+.social-links img {
+    width: 35%;
+    border: solid var(--primary-color) 1px;
+    border-radius: 6rem;
+    padding: 0.5rem;
+}
+
 /* Footer */
 .footer {
     background-color: var(--dark-color);
+    padding: 1.5rem;
 }
 
 .text-overlay h1{
     text-align: center;
     color: var(--secondary-color);
+}
+
+
+/* === Responsiveness === */
+@media screen and (max-width: 976px) {
+    * {
+        font-size: 14px;
+    }
+
+    /* Text Sizes */
+    .x-lg {
+        font-size: 1.5rem;
+    }
+
+    .lg {
+        font-size: 1.2rem;
+    }
+
+    .md {
+        font-size: 0.8rem;
+    }
+
+
+    /* showcase */
+    .showcase-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Experienece */
+    .experience-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .card-box {
+        width: 100%;
+        height: 140px;
+    }
 }
